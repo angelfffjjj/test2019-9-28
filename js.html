@@ -1,0 +1,115 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta chrast="UTF-8>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        //資料:數字、字串、布林值(true/false)、空值(null/undefined)
+        //變數存放資料的名稱
+        //運算符號
+        //流程控制
+            //if判斷式
+            //while 迴圈
+
+
+
+
+
+        //運算符號
+        //算數運算 : +, -, *, /
+        /*let x=3*4; //建立變數同時給資料:let 變數名稱=資料;
+        console.log(x)
+        //指定運算 : =, +=, *=, /=
+        x+=1;//x=x+1;
+        x-=2;//x=x-2;
+        console.log(x);
+        //比較運算:>,<,>=,<=,==
+        x=3==4;//比較3和4是否相等
+        console.log(x);
+        //單元運算;!,++,--
+        x=!true;//反轉布林值
+        console.log(x);
+        x=2;
+        x++;//x+=1;x=x+1;
+        console.log(x);
+        */
+        /*
+        //去chrome抓程式   
+        //console.log(資料);
+        //讓使用者輸入資料
+        //prompt(字串,字串);
+        let n1=prompt("輸入一個數字","");
+        let n2=prompt("輸入第二個數字","");
+        let resule=n1*n2;
+        console.log(result);
+        */
+
+        //流程控制
+        //if判斷式
+        /*
+            if(布林值){
+                如果上方布林值是true, 執行這個區塊的程式碼
+            }else if(布林值){
+                如果上方布林值是false,執行這個區塊的程式碼
+            }else{
+                如果上方的布林值都是flase,執行這個區塊的程式碼
+            }
+        
+        let money=prompt("要多少錢?","");
+        if(money<=100){
+            console.log("Too Few");
+        }
+        else if(money<=100000){
+            console.log("OK");
+        }else{
+            console.log("Too Much");
+        }
+        */
+
+         //while 迴圈
+         /*while(布林值){
+             如果布林值是true,執行這個區塊的程式碼
+             跑到最後，回到迴圈的開頭，再來一次
+         }
+         let n=0;
+         while(n<10000){
+            console.log(n);
+            n++;
+         }
+         */
+
+         //1+2+3+4+......+50
+         /*
+         let result=(1+50)*50/2;
+         console.log(result);
+         */
+         /*
+         let result=0;
+         let n=1;
+         while(n<=20){
+             console.log(n,result);
+             result=result+n;
+             n++;
+         }
+         console.log(result);
+         */
+         //讓使用者輸入一個數字，開根號取整數
+         //輸入 16得到4，輸入10得到【沒有答案】
+        let number=prompt("輸入一個正整數","");
+        let n=1;
+        while(n<number){ //測試1,2,3,4,...,number-1
+            if(n*n==number){
+                console.log("答案",n);
+                break;//在迴圈中使用break; 命令，強迫結束迴圈
+            }
+            n++;
+            console.log(n);
+        }
+        </script>
+</body>
+</html>
