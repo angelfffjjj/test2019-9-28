@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta chrast="UTF-8>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h3>Hello HTML, DOM</h3>
+    <div id="content">這是畫面和程式結合的關鍵</div>
+    <button onclick="change();">Chick</button>
+    <script>
+        //HTME DOM:程式控制網頁畫面的關鍵
+        //HTME DOM:內建的window物件
+        function change(){
+            //window.document.body.innerHTML="Changed Title";
+            //window可不寫
+            //取得目標的標籤
+            //document.getElementById("標籤的ID")
+            let element=document.getElementById("content");
+            //console.log(element);
+            //對標籤做修改
+            //取得/修改標籤的屬性
+            element.innerHTML="總算可以操作畫面了";
+            element.id="test";
+            element.className="test-class";
+            //修改標籤的CSS樣式
+            //console.log(element.style);
+            element.style.color="red";//變紅色
+            element.style.fontSize="30px";//變大
+            element.style.display="none";//變什麼都沒有
+        }
+        
+    </script>     
+</body>
+</html>
+

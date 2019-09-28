@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta chrast="UTF-8>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tabs</title>
+</head>
+<body>
+    <div>
+        <span onclick="changeToLatest();">最新</span>
+        <span onclick="changeToPopular();">熱門</span>
+    </div>
+    <hr/>
+    <div id="latest">聽說天氣之子很雷</div>
+    <div id="popular" style="display:none">返校很好看!!!!!?????</div>
+    <script>
+        function get(id){
+            return document.getElementById(id);
+        }
+        function changeToLatest(){
+            //取得有興趣的標籤>>很常用  *有些人會把get用$代替*
+            let latest=get("latest");
+            let pupular=get("popular");
+            //對標籤做適當的操作
+            latest.style.display="block";
+            popular.style.display="none";
+        }
+        
+        function changeToPopular(){
+            //取得有興趣的標籤
+            let latest=get("latest");
+            let pupular=get("popular");
+            //對標籤做適當的操作
+            latest.style.display="none";
+            popular.style.display="block";
+        }
+    </script>
+</body>
+</html>

@@ -15,8 +15,8 @@
         //流程控制
             //if判斷式
             //while 迴圈
-
-
+        //函式:基本結構、參數、回傳值
+        //物件
 
 
 
@@ -100,16 +100,59 @@
          */
          //讓使用者輸入一個數字，開根號取整數
          //輸入 16得到4，輸入10得到【沒有答案】
-        let number=prompt("輸入一個正整數","");
+        /*let number=prompt("輸入一個正整數","");
         let n=1;
         while(n<number){ //測試1,2,3,4,...,number-1
             if(n*n==number){
                 console.log("答案",n);
                 break;//在迴圈中使用break; 命令，強迫結束迴圈
+            }else if(n==number-1){//測試到最後一圈，都沒有答案，才說沒有答案
+                console.log("沒有答案");
             }
             n++;
-            console.log(n);
         }
+        */
+
+        //函式
+        /*
+            建立函式
+                function函式名稱(參數名稱列表){
+                    函式內部的程式區塊
+                }
+            呼叫函式
+                函式名稱(參數資料);
+        */
+        /*
+        function test(msg){
+            console.log(msg);
+        }
+        test("Hello");
+        test("World");
+        test(true);
+        */
+        /*function add(x1,x2){
+            //console.log(x1+x2);
+            return x1+x2;//return回傳值;
+        }
+        let result=add(6,4)*add(7,4);
+        console.log(result);
+        //let number=prompt("輸入一個正整數","")
+        */
+        /*
+            function calc(max){
+            let result=0;
+            let n=1;
+            while(n<=max){
+                result=result+n;
+                n++;
+             }
+             console.log(result);
+        }
+        
+        calc(50);
+        calc(100);
+        calc(6);
+        */
         </script>
 </body>
 </html>
